@@ -9,4 +9,20 @@ import { data, dataSpec } from 'src/data/data';
 export class AppComponent {
   title = 'monotonicity-festival';
   data:dataSpec = data;
+  observer = new IntersectionObserver((entriees)=>{
+    entriees.forEach((entry)=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+      else{
+        entry.target.classList.remove('show');
+      }
+    })
+  })
+  ngAfterViewInit(){
+   let elems = document.querySelectorAll('.hidden')
+    elems.forEach((elem)=>{
+      this.observer.observe(elem);
+    })
+  }
 }

@@ -7,20 +7,22 @@
 <!-- <p>TODOs</p>
 What's the venue for these talks?<br/> -->
 <!-- </div> -->
-<div class="section">
+<div class="section hidden">
 <div class="text">
     <p *ngFor="let para of data.text">
         {{para}}
     </p>
 </div>
 </div>
-<div class="section">
-    <div>
-<app-seminarbox *ngFor="let seminar of data.talks" [seminar]="seminar" />
-
-    </div>
+<div class="section reverse hidden">
+<div>
+    <app-seminarbox *ngFor="let seminar of data.talks" [seminar]="seminar" />
 </div>
-<div class="section">
+</div>
+<div class="section hidden">
 <app-persontag *ngFor="let speaker of data.speakers" [person]="speaker"/>
+</div>
+<div class="footer">
+
 </div>
 </div>
