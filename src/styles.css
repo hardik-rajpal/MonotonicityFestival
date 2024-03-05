@@ -1,1 +1,203 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'assets/fonts/stylesheet.css';
+:root{
+    --primary:#00356b;
+    --secondary:#286dc0;
+    --accent:#006ef5;
+    --light:#7eb3f5;
+    --light2:#b4d1f5;
+    --lightgray:#eee;
+    --darkgray:#ccc;
+    --mgvwidth:600px;
+    --abstractFontSize:0.8rem;
+    letter-spacing: 0.5px;
+    font-size: 19.5px;
+    text-align: justify;
+
+    font-family: Neue Haas Grotesk Display Pro;
+}
+.title{
+    font-size: xx-large;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: var(--accent);
+}
+img.logo{
+    max-height: 100px;
+}
+img.persontag{
+    height: 90px;
+    width: 90px;
+    
+}
+a:hover{
+    color: var(--light);
+}
+a.button{
+    border: 3px solid var(--secondary);
+    padding: 5px;
+    font-size: 1.33rem;
+    border-radius: 5px;
+}
+.title{
+    font-size: 1.66rem;
+    text-align: center;
+}
+.heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.small-heading{
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.heading-mycolored{
+    font-size: 1.33rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+.mycol{
+    display: flex;
+    flex-direction: column;
+}
+.centercol{
+    align-items: center;
+}
+.centerrow{
+    justify-content: center;
+}
+.myrow{
+    display: flex;
+    flex-direction: row;
+}
+.rrow{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+input{
+    height: 30px;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.student-img{
+    width: 250px;
+    height: 250px;
+}
+.person-img{
+    width: 200px;
+    height: 200px;
+}
+.preview-img{
+    width: 30px;
+    height: 30px;
+}
+hr.thick{
+    border: 3px solid var(--secondary);
+    /* clear:both; */
+    display:block;
+    width: 100%;               
+    background-color:var(--secondary);
+    /* height: 5px; */
+}
+hr.thin{
+    border: 1px solid gray;
+    /* clear:both; */
+    display:block;
+    width: 100%;               
+    background-color:var(--secondary);
+    /* height: 5px; */
+}
+.titlebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.fs-large{
+    font-size: 1.33rem;
+}
+.fs-x-large{
+    font-size: 1.66rem;
+}
+.fs-medium{
+    font-size: 1rem;
+}
+.fs-small{
+    font-size: 0.8rem;
+}
+.fs-smaller{
+    font-size: 0.66rem;
+}
+.fs-larger{
+    font-size: 1.5rem;
+}
+.fs-xx-large{
+    font-size: 2rem;
+}
+.pointable{
+    cursor: pointer;
+}
+.desktop{
+    display: none;
+}
+
+@media(min-width:800px){
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+.shadow{
+    box-shadow: 3px 3px 5px 5px grey;
+}
+.bordered{
+    border: var(--darkgray) 2px solid;
+    padding: 10px;
+    padding-top: 5px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.titlebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 50%;
+}
+.articlesgrid{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+}
+@media (min-width:1410px) {
+    .articlesgrid{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.mentionsgrid{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+}
+@media (min-width:1200px){
+    .mentionsgrid{
+        grid-template-columns: 50% 50%;
+    }
+}
+.twitter-tweet.twitter-tweet-rendered{
+    margin: 10px;
+}
+

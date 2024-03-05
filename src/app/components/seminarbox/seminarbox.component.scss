@@ -1,0 +1,31 @@
+.seminar-title{
+    color: var(--accent);
+    font-weight: bold;
+}
+.speakers{
+    font-weight: bold;
+}
+.mycol{
+    margin-left: 10px;
+}
+.myrow{
+    align-items: center;
+}
+i.fa{
+    padding: 5px;
+}
+i.fa.fa-map-marker{
+    padding-right: 11px;
+}
+i.fa.fa-microphone{
+    padding-right: 10px;
+}
+.mycollapsible{
+    margin-top: 10px;
+}
+.abstract{
+    font-size: var(--abstractFontSize);
+}
+.details{
+    overflow: auto;
+}

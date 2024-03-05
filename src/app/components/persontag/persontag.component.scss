@@ -1,0 +1,21 @@
+div.main{
+    margin: 10px;
+    justify-content: space-around;
+}
+img.persontag{
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px 5px grey;
+    z-index: 1;
+}
+div.text{
+    background-color: var(--light2);
+    padding: 10px;
+    width: 80%;
+    padding-left: 70px;
+    margin-left: -50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+div.name{
+    font-weight: bold;
+}

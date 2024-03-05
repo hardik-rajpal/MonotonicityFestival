@@ -1,0 +1,17 @@
+div.main{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: whitesmoke;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+div.section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-inline: 10%;
+}
