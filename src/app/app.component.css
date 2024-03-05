@@ -6,6 +6,7 @@ div.main{
     position: absolute;
     background-image: url('src/assets/bg.svg');
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 div.section{
     display: grid;
@@ -25,6 +26,16 @@ div.section.reverse{
     margin-inline: 10%;
     direction: rtl;
 }
+div.dir-ltr{
+    width: 50%;
+}
+div.seminars{
+    align-items: center;
+    justify-content: center;
+}
+div.seminars>div{
+    margin: 5%;
+}
 div.section>p{
     border: 3px solid blue;
     margin-top: 10%;
@@ -38,9 +49,6 @@ div.footer{
     transform: translateX(-100%);
     transition: all 1s;
 }
-/* .reverse.hidden{
-    transform: translateX(100%);
-} */
 .show{
     opacity: 1;
     filter:blur(0);

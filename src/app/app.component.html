@@ -7,26 +7,26 @@
 <!-- <p>TODOs</p>
 What's the venue for these talks?<br/> -->
 <!-- </div> -->
-<div class="section hidden">
+<div class="section ltr hidden">
 <div class="text">
     <p *ngFor="let para of data.text">
         {{para}}
     </p>
 </div>
 </div>
-<div class="section reverse hidden">
-<div class="dir-ltr">
+<div class="seminars myrow">
+<div class="dir ltr hidden">
     <app-seminarbox *ngFor="let seminar of data.talks.slice(0,3)" [seminar]="seminar" />
 </div>
-<div class="dir-ltr">
+<div class="dir rtl hidden">
     <app-seminarbox *ngFor="let seminar of data.talks.slice(3)" [seminar]="seminar" />
 </div>
 
 </div>
-<div class="center mycol centercol hidden">
+<div class="center mycol centercol rtl hidden">
     <p>{{data.callToAction}}</p>
 </div>
-<div class="section hidden">
+<div class="section hidden ltr">
 <app-persontag *ngFor="let speaker of data.speakers" [person]="speaker"/>
 </div>
 <div class="footer">

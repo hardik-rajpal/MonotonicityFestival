@@ -1,4 +1,5 @@
 
+//TODO: speakers: desc+webpage link.
 export interface seminarSpec{
     speakers:string;
     dateTime:string;
