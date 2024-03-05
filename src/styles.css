@@ -49,6 +49,12 @@ a.button{
     font-size: 1.66rem;
     /* text-align: center; */
 }
+.dir-ltr{
+    direction: ltr;
+}
+.dir-rtl{
+    direction: rtl;
+}
 .heading{
     font-size: 1.5rem;
     font-weight: bold;

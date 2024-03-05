@@ -15,9 +15,16 @@ What's the venue for these talks?<br/> -->
 </div>
 </div>
 <div class="section reverse hidden">
-<div>
-    <app-seminarbox *ngFor="let seminar of data.talks" [seminar]="seminar" />
+<div class="dir-ltr">
+    <app-seminarbox *ngFor="let seminar of data.talks.slice(0,3)" [seminar]="seminar" />
 </div>
+<div class="dir-ltr">
+    <app-seminarbox *ngFor="let seminar of data.talks.slice(3)" [seminar]="seminar" />
+</div>
+
+</div>
+<div class="center mycol centercol hidden">
+    <p>{{data.callToAction}}</p>
 </div>
 <div class="section hidden">
 <app-persontag *ngFor="let speaker of data.speakers" [person]="speaker"/>

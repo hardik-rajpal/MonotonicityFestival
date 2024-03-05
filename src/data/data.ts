@@ -12,6 +12,7 @@ export interface personTileSpec{
 export interface dataSpec{
     text:string[];
     talks:seminarSpec[];
+    callToAction:string[];
     speakers:personTileSpec[];
 }
 export const data:dataSpec = {
@@ -30,11 +31,44 @@ export const data:dataSpec = {
             dateTime:`Apr 18, 5:30PM`,
             speakers:`Deeparnab`,
             description:`A comprehensive examination of o(d) testers for the Hypercube, unraveling the conceptual underpinnings of path testers and illuminating the profound connection between isoperimetry and o(d) testers.`
+        },
+        {
+            dateTime:`Apr 22, 10:30AM`,
+            speakers:`Hadley`,
+            description:`An insightful overview of the Hypergrid domain, featuring a meticulous analysis of the line tester, coupled with discussions on augmented hypergrids and pioneering o(d) testers.`
+        },
+        {
+            dateTime:`Apr 24, 10:30AM`,
+            speakers:`Hadley`,
+            description:`A meticulous exploration of domain reduction complexities, coupled with the derivation of isoperimetric results tailored for the Hypergrid.`
+        },
+        {
+            dateTime:`Apr 26, 10:30AM`,
+            speakers:`Sesh`,
+            description:`An academic journey into the intricate facets of KMS with Seshadhri, unraveling the algorithmic intricacies of this scholarly endeavor.`
+        },
+        {
+            dateTime:`Apr 30, 10:30AM`,
+            speakers:`Sesh`,
+            description:`The grand denouement, as Seshadhri presents the ultimate results for Hypergrids, concluding with open questions that beckon the next wave of academic exploration.`
         }
+    ],
+    callToAction:[
+        `Participate in this scholarly odyssey, where rigorous academic inquiry converges with the thrill of unraveling the secrets of Boolean Monotonicity Testing!`
     ],
     speakers:[
             {
+                name:`Seshadhri`,
+                image:`https://i.imgur.com/vxP6SFl.png`,
+                description:`Lorem Ipsum`
+            },
+            {
                 name:`Deeparnab`,
+                image:`https://i.imgur.com/vxP6SFl.png`,
+                description:`Lorem Ipsum`
+            },
+            {
+                name:`Hadley`,
                 image:`https://i.imgur.com/vxP6SFl.png`,
                 description:`Lorem Ipsum`
             }

@@ -10,6 +10,11 @@ div.main{
 div.section{
     display: grid;
     grid-template-columns: 45% 45%;
+    gap: 20px;
+    margin-top: 10%;
+    margin-inline: 10%;
+}
+div.center{
     margin-top: 10%;
     margin-inline: 10%;
 }
