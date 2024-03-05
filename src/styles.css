@@ -15,6 +15,11 @@
 
     font-family: Neue Haas Grotesk Display Pro;
 }
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 .title{
     font-size: xx-large;
     padding: 10px;
@@ -42,7 +47,7 @@ a.button{
 }
 .title{
     font-size: 1.66rem;
-    text-align: center;
+    /* text-align: center; */
 }
 .heading{
     font-size: 1.5rem;

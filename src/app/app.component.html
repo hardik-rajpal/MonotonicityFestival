@@ -1,17 +1,25 @@
 <div class="main">
-<p class="title">Monotonicity Festival</p>
+
 <div class="section">
-<p>TODOs</p>
-What's the venue for these talks?<br/>
+    <p class="title">Monotonicity Festival</p>
+</div>
+<!-- <div class="section"> -->
+<!-- <p>TODOs</p>
+What's the venue for these talks?<br/> -->
+<!-- </div> -->
+<div class="section">
+<div class="text">
+    <p *ngFor="let para of data.text">
+        {{para}}
+    </p>
+</div>
 </div>
 <div class="section">
-<p *ngFor="let para of data.text">
-{{para}}
-</p>
-</div>
-<!-- <div class="section">
+    <div>
 <app-seminarbox *ngFor="let seminar of data.talks" [seminar]="seminar" />
-</div> -->
+
+    </div>
+</div>
 <div class="section">
 <app-persontag *ngFor="let speaker of data.speakers" [person]="speaker"/>
 </div>

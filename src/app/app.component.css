@@ -4,14 +4,17 @@ div.main{
     background-color: black;
     color: whitesmoke;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    background-image: url('src/assets/bg.svg');
+    background-repeat: no-repeat;
 }
 div.section{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 45% 45%;
     margin-top: 10%;
     margin-inline: 10%;
+}
+
+div.section>p{
+    border: 3px solid blue;
+    margin-top: 10%;
 }
