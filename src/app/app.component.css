@@ -31,7 +31,12 @@ div.section>p{
     margin-top: 10%;
 }
 div.footer{
-    margin-top: 20%;
+    border-top: white 2px solid;
+    padding-top: 2%;
+    margin-inline: 10%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    text-align: center;
 }
 .hidden{
     opacity: 0;
