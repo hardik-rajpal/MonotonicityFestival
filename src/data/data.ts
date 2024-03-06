@@ -28,7 +28,7 @@ export const data:dataSpec = {
         presented o(n) time algorithms for this problem rekindling interest in this problem. A 
         flurry of important results trickled in (with Seshadhri and Chakrbarty co-authoring a 
         fair share of those together with Hadley Black). Fast forward to the current times. We 
-        now know understand optimal non-adaptive one-sided algorithms for the problem over the 
+        now know optimal non-adaptive one-sided algorithms for the problem over the 
         hypercube. Of course, you can ask this problem over other partially-ordered domains as 
         well. One popular such domain is the Hypergrid domain. Seshadhri, Chakrabarty and Black 
         have several important contributions over the hypergrid domain as well. Some of these 
