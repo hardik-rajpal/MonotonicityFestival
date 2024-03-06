@@ -9,35 +9,25 @@ div.main{
     overflow-x: hidden;
 }
 div.section{
-    display: grid;
-    grid-template-columns: 45% 45%;
-    gap: 20px;
-    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
     margin-inline: 10%;
 }
 div.center{
-    margin-top: 10%;
-    margin-inline: 10%;
+    margin-top: 5%;
+    text-align: center;
+    margin-inline: 20%;
 }
-div.section.reverse{
-    display: grid;
-    grid-template-columns: 45% 45%;
-    margin-top: 10%;
-    margin-inline: 10%;
-    direction: rtl;
-}
-div.dir-ltr{
-    width: 50%;
-}
+
 div.seminars{
     align-items: center;
     justify-content: center;
 }
-div.seminars>div{
+div.seminars>div>div{
     margin: 5%;
 }
 div.section>p{
-    border: 3px solid blue;
     margin-top: 10%;
 }
 div.footer{
@@ -46,13 +36,27 @@ div.footer{
 .hidden{
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
     transition: all 1s;
+}
+div.halfwidth{
+    width: 48%;
+}
+.ltr{
+    transform: translateX(-100%);
+}
+.rtl{
+    transform: translateX(100%);
 }
 .show{
     opacity: 1;
     filter:blur(0);
-    transform: translateX(0);
+    transform: translateX(0) ;
+}
+div.speakers:nth-child(2){
+    transition-delay: 300ms;
+}
+div.speakers:nth-child(3){
+    transition-delay: 600ms;
 }
 @media(prefers-reduced-motion){
     .hidden{

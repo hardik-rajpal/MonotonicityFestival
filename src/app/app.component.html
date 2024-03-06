@@ -1,33 +1,45 @@
 <div class="main">
 
 <div class="section">
-    <p class="title">Monotonicity Festival</p>
+    <p class="fs-xx-large">Monotonicity Festival</p>
 </div>
-<!-- <div class="section"> -->
-<!-- <p>TODOs</p>
-What's the venue for these talks?<br/> -->
-<!-- </div> -->
 <div class="section ltr hidden">
-<div class="text">
+<div class="text halfwidth fs-medium">
     <p *ngFor="let para of data.text">
         {{para}}
     </p>
 </div>
 </div>
-<div class="seminars myrow">
-<div class="dir ltr hidden">
-    <app-seminarbox *ngFor="let seminar of data.talks.slice(0,3)" [seminar]="seminar" />
+<div class="section">
+    <div class="halfwidth speakers">
+        <p class="heading">Speakers</p>
+        <div class="ltr hidden">
+            <app-persontag [person]="data.speakers[0]"/>
+        </div>
+        <div class="ltr hidden">
+            <app-persontag [person]="data.speakers[1]"/>
+        </div>
+        <div class="ltr hidden">
+            <app-persontag [person]="data.speakers[2]"/>
+        </div>
+    </div>
+    </div>
+    
+<div class="seminars mycol">
+<div>
+    <p class="heading">Schedule</p>
 </div>
-<div class="dir rtl hidden">
-    <app-seminarbox *ngFor="let seminar of data.talks.slice(3)" [seminar]="seminar" />
+<div class="myrow">
+    <div class="halfwidth dir ltr hidden jazzy-bordered">
+        <app-seminarbox *ngFor="let seminar of data.talks.slice(0,3)" [seminar]="seminar" />
+    </div>
+    <div class="halfwidth dir rtl hidden jazzy-bordered">
+        <app-seminarbox *ngFor="let seminar of data.talks.slice(3)" [seminar]="seminar" />
+    </div>
 </div>
-
 </div>
-<div class="center mycol centercol rtl hidden">
+<div class="center mycol centercol rtl hidden fs-large bordered">
     <p>{{data.callToAction}}</p>
-</div>
-<div class="section hidden ltr">
-<app-persontag *ngFor="let speaker of data.speakers" [person]="speaker"/>
 </div>
 <div class="footer">
 

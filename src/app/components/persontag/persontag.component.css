@@ -4,12 +4,11 @@ div.main{
 }
 img.persontag{
     border-radius: 50%;
-    box-shadow: 3px 3px 5px 5px grey;
     z-index: 1;
+    border: 3px solid blue;
+    border-right: 0px;
 }
 div.text{
-    background-color: var(--light2);
-    padding: 10px;
     width: 80%;
     padding-left: 70px;
     margin-left: -50px;

@@ -4,7 +4,7 @@ import { personTileSpec } from 'src/data/data';
 @Component({
   selector: 'app-persontag',
   templateUrl: './persontag.component.html',
-  styleUrls: ['./persontag.component.scss']
+  styleUrls: ['./persontag.component.css']
 })
 export class PersontagComponent {
   @Input() person!:personTileSpec;
