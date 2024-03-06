@@ -1,47 +1,74 @@
 <div class="main">
 
-<div class="section">
-    <p class="fs-xx-large">Monotonicity Festival</p>
-</div>
-<div class="section ltr hidden">
-<div class="text halfwidth fs-medium">
-    <p *ngFor="let para of data.text">
-        {{para}}
-    </p>
-</div>
-</div>
-<div class="section">
-    <div class="halfwidth speakers">
-        <p class="heading">Speakers</p>
-        <div class="ltr hidden">
-            <app-persontag [person]="data.speakers[0]"/>
+    <div class="section">
+        <p class="fs-xx-large">Monotonicity Festival</p>
+    </div>
+    <div class="section ltr hidden">
+        <div class="desktop text halfwidth fs-medium">
+            <p *ngFor="let para of data.text">
+                {{para}}
+            </p>
         </div>
-        <div class="ltr hidden">
-            <app-persontag [person]="data.speakers[1]"/>
-        </div>
-        <div class="ltr hidden">
-            <app-persontag [person]="data.speakers[2]"/>
+        <div class="mobile fs-small">
+            <p *ngFor="let para of data.text">
+                {{para}}
+            </p>
         </div>
     </div>
+    <div class="section">
+        <div class="desktop halfwidth speakers">
+            <p class="heading">Speakers</p>
+            <div class="ltr hidden">
+                <app-persontag [person]="data.speakers[0]" />
+            </div>
+            <div class="ltr hidden">
+                <app-persontag [person]="data.speakers[1]" />
+            </div>
+            <div class="ltr hidden">
+                <app-persontag [person]="data.speakers[2]" />
+            </div>
+        </div>
+        <div class="mobile speakers">
+            <p class="heading">Speakers</p>
+            <div class="ltr hidden">
+                <app-persontag [person]="data.speakers[0]" />
+            </div>
+            <div class="ltr hidden">
+                <app-persontag [person]="data.speakers[1]" />
+            </div>
+            <div class="ltr hidden">
+                <app-persontag [person]="data.speakers[2]" />
+            </div>
+        </div>
+        
     </div>
-    
-<div class="seminars mycol">
-<div>
-    <p class="heading">Schedule</p>
-</div>
-<div class="myrow">
-    <div class="halfwidth dir ltr hidden jazzy-bordered">
-        <app-seminarbox *ngFor="let seminar of data.talks.slice(0,3)" [seminar]="seminar" />
+
+    <div class="seminars mycol">
+        <div>
+            <p class="heading">Schedule</p>
+        </div>
+        <div class="desktop">
+            <div class="myrow">
+                <div class="halfwidth dir ltr hidden jazzy-bordered">
+                    <app-seminarbox *ngFor="let seminar of data.talks.slice(0,3)" [seminar]="seminar" />
+                </div>
+                <div class="halfwidth dir rtl hidden jazzy-bordered">
+                    <app-seminarbox *ngFor="let seminar of data.talks.slice(3)" [seminar]="seminar" />
+                </div>
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="mycol">
+                <div class="dir ltr hidden jazzy-bordered">
+                    <app-seminarbox *ngFor="let seminar of data.talks" [seminar]="seminar" />
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="halfwidth dir rtl hidden jazzy-bordered">
-        <app-seminarbox *ngFor="let seminar of data.talks.slice(3)" [seminar]="seminar" />
+    <div class="center mycol centercol rtl hidden fs-large bordered">
+        <p>{{data.callToAction}}</p>
     </div>
-</div>
-</div>
-<div class="center mycol centercol rtl hidden fs-large bordered">
-    <p>{{data.callToAction}}</p>
-</div>
-<div class="footer">
-We sincerely acknowledge the hard work put in by Hardik Rajpal in designing this website.
-</div>
+    <div class="footer">
+        We sincerely acknowledge the hard work put in by Hardik Rajpal in designing this website.
+    </div>
 </div>
