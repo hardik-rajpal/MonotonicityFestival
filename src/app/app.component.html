@@ -1,9 +1,9 @@
 <div class="main">
 
-    <div class="section">
+    <div class="section myrow">
         <p class="fs-xx-large">Monotonicity Festival</p>
     </div>
-    <div class="section ltr hidden">
+    <div class="section myrow ltr hidden">
         <div class="desktop text halfwidth fs-medium">
             <p *ngFor="let para of data.text">
                 {{para}}
@@ -15,28 +15,28 @@
             </p>
         </div>
     </div>
-    <div class="section">
+    <div class="section rrow">
         <div class="desktop halfwidth speakers">
             <p class="heading">Speakers</p>
-            <div class="ltr hidden">
+            <div class="rtl hidden">
                 <app-persontag [person]="data.speakers[0]" />
             </div>
-            <div class="ltr hidden">
+            <div class="rtl hidden">
                 <app-persontag [person]="data.speakers[1]" />
             </div>
-            <div class="ltr hidden">
+            <div class="rtl hidden">
                 <app-persontag [person]="data.speakers[2]" />
             </div>
         </div>
         <div class="mobile speakers">
             <p class="heading">Speakers</p>
-            <div class="ltr hidden">
+            <div class="rtl hidden">
                 <app-persontag [person]="data.speakers[0]" />
             </div>
-            <div class="ltr hidden">
+            <div class="rtl hidden">
                 <app-persontag [person]="data.speakers[1]" />
             </div>
-            <div class="ltr hidden">
+            <div class="rtl hidden">
                 <app-persontag [person]="data.speakers[2]" />
             </div>
         </div>
@@ -71,7 +71,7 @@
     <div class="mobile center centercol rtl hidden fs-large bordered">
         <p>{{data.callToAction}}</p>
     </div>
-    <div class="footer">
+    <div class="footer fs-small">
         We sincerely acknowledge the hard work put in by Hardik Rajpal in designing this website.
     </div>
 </div>

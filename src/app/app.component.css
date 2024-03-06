@@ -9,8 +9,6 @@ div.main{
     overflow-x: hidden;
 }
 div.section{
-    display: flex;
-    flex-direction: row;
     margin-top: 5%;
     margin-inline: 10%;
 }
