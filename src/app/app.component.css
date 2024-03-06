@@ -19,13 +19,18 @@ div.center{
     text-align: center;
     margin-inline: 20%;
 }
-
+div.center.mobile{
+    margin-inline: 5%;
+}
 div.seminars{
     align-items: center;
     justify-content: center;
 }
-div.seminars>div>div{
+div.seminars>div.desktop>div{
     margin: 5%;
+}
+div.seminars>div.mobile>div{
+    margin: 2%;
 }
 div.section>p{
     margin-top: 10%;
