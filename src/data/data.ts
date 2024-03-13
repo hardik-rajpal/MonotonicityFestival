@@ -85,17 +85,17 @@ export const data: dataSpec = {
     ],
     speakers: [
         {
-            name: `Hadley`,
+            name: `Hadley Black`,
             image: `assets/hadley.jpg`,
             description: `<a href="https://www.linkedin.com/in/hadley-black-77241b19a/">LinkedIn</a>`
         },
         {
-            name: `Deeparnab`,
+            name: `Deeparnab Chakrabarty`,
             image: `assets/deeparnab.jpg`,
             description: `<a href="https://www.cs.dartmouth.edu/~deepc/">Webpage</a>`
         },
         {
-            name: `Seshadhri`,
+            name: `Seshadhri Comandur`,
             image: `assets/sesh.jpg`,
             description: `<a href="https://users.soe.ucsc.edu/~sesh/">Webpage</a>`
         }
