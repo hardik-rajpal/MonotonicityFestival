@@ -24,15 +24,15 @@ export const data: dataSpec = {
         Samordinsky, whose algorithms, operating with an impressive O(n) running time, shed light on 
         Boolean Monotonicity Testing over the Hypercube (which notably is an exp(n)-sized domain) within 
         the Property Testing Framework.`,
-        `Over a decade later, C. Seshadhri and Deeparnab Chakrabarty presented algorithms with a time 
+        `Over a decade later, Deeparnab Chakrabarty and C. Seshadhri presented algorithms with a time 
         complexity of o(n), reigniting scholarly interest in the problem. Subsequent contributions, often 
-        co-authored by Seshadhri, Chakrabarty, and Hadley Black, have further enriched the field. Presently, 
+        co-authored by Hadley Black, Deeparnab Chakrabarty and C. Seshadhri, have further enriched the field. Presently, 
         we have gained a comprehensive understanding of optimal non-adaptive one-sided algorithms for the 
         problem over the hypercube, along with extensions to other partially-ordered domains, such as Hypergrids. 
-        Noteworthy contributions by Seshadhri, Chakrabarty, and Black in this context, including recent publications 
+        Noteworthy contributions by Black, Chakrabarty, and Seshadhri in this context, including recent publications 
         in FOCS 2023 and STOC 2023, underscore the ongoing scholarly discourse.`,
         `Come join us here at IIT Bombay as we unveil the ideas that went behind this entire
-        line of work. Our guides on this quest are Seshadhri, Deeparnab and Hadley (Duh!). It 
+        line of work. Our guides on this quest are Hadley, Deeparnab, and Seshadhri (Duh!). It 
         should be a fantastic tour of the trends and techniques in this area and it should be of 
         interest to theory students and researchers both in India and Abroad. We have planned a 
         series of six talks to whet your appetite. Alright then, on we go.`,
@@ -87,7 +87,7 @@ export const data: dataSpec = {
         {
             name: `Hadley Black`,
             image: `assets/hadley.jpg`,
-            description: `<a href="https://www.linkedin.com/in/hadley-black-77241b19a/">LinkedIn</a>`
+            description: `<a href="https://hablack.github.io/">Webpage</a>`
         },
         {
             name: `Deeparnab Chakrabarty`,
