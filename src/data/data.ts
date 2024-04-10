@@ -51,7 +51,9 @@ export const data: dataSpec = {
              link:`https://us06web.zoom.us/j/83937708321?pwd=E05NMrrlDQ6rQIRbeV9TT3hShszjGd.1`,
              meetingID:`839 3770 8321`,
              password:`393687`,
-             abstract:``
+             abstract:`
+             
+             `
         },
         {
             dateTime: `Apr 18, 5:30PM`,
