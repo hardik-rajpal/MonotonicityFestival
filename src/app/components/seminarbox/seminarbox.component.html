@@ -19,10 +19,27 @@
         </div> -->
     </div>
     <p *ngIf="seminar.description">{{seminar.description}}</p>
-    <!-- <div class="mycollapsible">
-        <app-collapsible *ngIf="seminar.abstract" [title]="'Abstract'">
-            <app-paraspecbox *ngFor="let para of seminar.abstract" [para]="para" class="abstract"></app-paraspecbox>
-        </app-collapsible>
-    </div> -->
+    <div class="bordered" style="border-width: 2px;">
+        <div>Zoom Details</div>
+        <a *ngIf="seminar.link" [href]="seminar.link" target="_blank">
+            <i class="fa fa-external-link"></i>
+            Join Meeting
+        </a>
+        <div *ngIf="seminar.meetingID" class="myrow">
+            Meeting ID: 
+            <div style="padding-left: 2px;">
+                {{seminar.meetingID}}
+            </div>
+                <i id="{{seminar.description}}" (click)="copyToClipboard(seminar.meetingID,seminar.description)" style="cursor: pointer;" class="fa fa-copy"></i>
+        </div>
+        <div *ngIf="seminar.password" class="myrow">
+            Password: 
+            <div style="padding-left: 2px;">
+                {{seminar.password}}
+            </div>
+            <i id="{{seminar.description+'1'}}" (click)="copyToClipboard(seminar.password,seminar.description+'1')" style="cursor: pointer;" class="fa fa-copy"></i>
+        </div>
+    </div>
+    
     <hr>
 </div>
