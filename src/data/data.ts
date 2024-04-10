@@ -4,6 +4,9 @@ export interface seminarSpec {
     speakers: string;
     dateTime: string;
     description: string;
+    link?:string;
+    meetingID?:string;
+    password?:string;
 }
 export interface personTileSpec {
     name: string;
@@ -44,39 +47,57 @@ export const data: dataSpec = {
             description: `An in-depth Introduction and Overview, delving into the intricacies of
              the edge tester and exploring isoperimetric connections, with a specialized focus 
              on the Hypercube.`,
+             link:`https://us06web.zoom.us/j/83937708321?pwd=E05NMrrlDQ6rQIRbeV9TT3hShszjGd.1`,
+             meetingID:`839 3770 8321`,
+             password:`393687`
         },
         {
             dateTime: `Apr 18, 5:30PM`,
             speakers: `Deeparnab`,
             description: `A comprehensive examination of o(d) testers for the Hypercube, 
             unraveling the conceptual underpinnings of path testers and illuminating the 
-            profound connection between isoperimetry and o(d) testers.`
+            profound connection between isoperimetry and o(d) testers.`,
+            link:`https://us06web.zoom.us/j/82673497899?pwd=Nhct6jNRfNUuZaDR9MTFDyuYgfh2rS.1`,
+            meetingID:`826 7349 7899`,
+            password:`349885`
         },
         {
             dateTime: `Apr 22, 10:30AM`,
             speakers: `Hadley`,
             description: `An insightful overview of the Hypergrid domain, featuring a meticulous 
             analysis of the line tester, coupled with discussions on augmented hypergrids and 
-            pioneering o(d) testers.`
+            pioneering o(d) testers.`,
+            link:`https://us06web.zoom.us/j/88925275255?pwd=aGCeat2ruMPepn5hbzPRSX0fFwgH3j.1`,
+            meetingID:`889 2527 5255`,
+            password:`716615`
         },
         {
             dateTime: `Apr 24, 10:30AM`,
             speakers: `Hadley`,
             description: `A meticulous exploration of domain reduction complexities, coupled with 
-            the derivation of isoperimetric results tailored for the Hypergrid.`
+            the derivation of isoperimetric results tailored for the Hypergrid.`,
+            link:`https://us06web.zoom.us/j/84805246049?pwd=kuXuCrwzf8hBoMorDg3t4k8SSMym0v.1`,
+            meetingID:`848 0524 6049`,
+            password:`587588`
         },
         {
             dateTime: `Apr 26, 10:30AM`,
             speakers: `Sesh`,
             description: `An academic journey into the intricate facets of KMS with Seshadhri, 
-            unraveling the algorithmic intricacies of this scholarly endeavor.`
+            unraveling the algorithmic intricacies of this scholarly endeavor.`,
+            link:`https://us06web.zoom.us/j/85086024443?pwd=gNly1O3bi6JrQ5B2cirOUgGuq3VlwC.1`,
+            meetingID:`850 8602 4443`,
+            password:`950140`
         },
         {
             dateTime: `Apr 30, 10:30AM`,
             speakers: `Sesh`,
             description: `The grand denouement, as Seshadhri presents the ultimate results for 
             Hypergrids, concluding with open questions that beckon the next wave of academic 
-            exploration.`
+            exploration.`,
+            link:`https://us06web.zoom.us/j/85365027303?pwd=hreOInC1dMwdFYnTOVa0nblSs9kDz6.1`,
+            meetingID:`853 6502 7303`,
+            password:`909525`
         }
     ],
     callToAction: [

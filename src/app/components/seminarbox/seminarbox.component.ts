@@ -8,4 +8,16 @@ import { seminarSpec } from 'src/data/data';
 })
 export class SeminarboxComponent {
   @Input() seminar!:seminarSpec;
+  copyToClipboard(text:string,elementID:string){
+    navigator.clipboard.writeText(text);
+    let icon = document.getElementById(elementID);
+    if(icon){
+      icon.className = "fa fa-check";
+      setTimeout(() => {
+        if(icon){
+          icon.className = "fa fa-copy"
+        }
+      }, 700);
+    }
+  }
 }
