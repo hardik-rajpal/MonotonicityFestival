@@ -7,6 +7,7 @@ export interface seminarSpec {
     link?:string;
     meetingID?:string;
     password?:string;
+    abstract?:string;
 }
 export interface personTileSpec {
     name: string;
@@ -49,7 +50,8 @@ export const data: dataSpec = {
              on the Hypercube.`,
              link:`https://us06web.zoom.us/j/83937708321?pwd=E05NMrrlDQ6rQIRbeV9TT3hShszjGd.1`,
              meetingID:`839 3770 8321`,
-             password:`393687`
+             password:`393687`,
+             abstract:``
         },
         {
             dateTime: `Apr 18, 5:30PM`,
@@ -59,7 +61,9 @@ export const data: dataSpec = {
             profound connection between isoperimetry and o(d) testers.`,
             link:`https://us06web.zoom.us/j/82673497899?pwd=Nhct6jNRfNUuZaDR9MTFDyuYgfh2rS.1`,
             meetingID:`826 7349 7899`,
-            password:`349885`
+            password:`349885`,
+            abstract:``
+
         },
         {
             dateTime: `Apr 22, 10:30AM`,
@@ -69,7 +73,8 @@ export const data: dataSpec = {
             pioneering o(d) testers.`,
             link:`https://us06web.zoom.us/j/88925275255?pwd=aGCeat2ruMPepn5hbzPRSX0fFwgH3j.1`,
             meetingID:`889 2527 5255`,
-            password:`716615`
+            password:`716615`,
+            abstract:``
         },
         {
             dateTime: `Apr 24, 10:30AM`,
@@ -78,7 +83,8 @@ export const data: dataSpec = {
             the derivation of isoperimetric results tailored for the Hypergrid.`,
             link:`https://us06web.zoom.us/j/84805246049?pwd=kuXuCrwzf8hBoMorDg3t4k8SSMym0v.1`,
             meetingID:`848 0524 6049`,
-            password:`587588`
+            password:`587588`,
+            abstract:``
         },
         {
             dateTime: `Apr 26, 10:30AM`,
@@ -87,7 +93,8 @@ export const data: dataSpec = {
             unraveling the algorithmic intricacies of this scholarly endeavor.`,
             link:`https://us06web.zoom.us/j/85086024443?pwd=gNly1O3bi6JrQ5B2cirOUgGuq3VlwC.1`,
             meetingID:`850 8602 4443`,
-            password:`950140`
+            password:`950140`,
+            abstract:``
         },
         {
             dateTime: `Apr 30, 10:30AM`,
@@ -97,7 +104,8 @@ export const data: dataSpec = {
             exploration.`,
             link:`https://us06web.zoom.us/j/85365027303?pwd=hreOInC1dMwdFYnTOVa0nblSs9kDz6.1`,
             meetingID:`853 6502 7303`,
-            password:`909525`
+            password:`909525`,
+            abstract:``
         }
     ],
     callToAction: [
