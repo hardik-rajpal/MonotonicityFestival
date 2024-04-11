@@ -40,6 +40,11 @@
             <i id="{{seminar.description+'1'}}" (click)="copyToClipboard(seminar.password,seminar.description+'1')" style="cursor: pointer;" class="fa fa-copy"></i>
         </div>
     </div>
-    
+     <div class="mycollapsible">
+        <app-collapsible *ngIf="seminar.abstract" [title]="'Abstract'">
+          <div [innerHTML]="seminar.abstract" style="margin-bottom: 5px;">
+          </div>
+        </app-collapsible>
+    </div>
     <hr>
 </div>

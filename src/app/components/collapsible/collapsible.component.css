@@ -1,0 +1,31 @@
+.mycollapsible {
+    background-color: var(--lightgray);
+    color: #faf7f7;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: none;
+}
+
+.active,
+.mycollapsible:hover {
+    background-color: var(--darkgray);
+}
+
+.content {
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    padding: 0px 18px;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--lightgray);
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
